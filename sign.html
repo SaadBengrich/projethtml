@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="projet.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <nav>
+            <img src="logo3.png" alt="logo">
+            <ul class="uu">
+                <li><a  href="p.html"><i class="fa-solid fa-house-user"></i>HOME</a></li>
+                <li><a href="shop.html"><i class="fa-solid fa-store"></i>SHOP</a></li>
+                <li><a href="contactus.html"><i class="fa-solid fa-phone"></i>CONTACT US </a></li>
+                <li> <a href="signupin.html"><i class="fa-solid fa-right-to-bracket"></i>SIGN IN</a></li>
+              </ul>
+        </nav>
+    </header>
+
+    <div class="sign">
+        <h1>
+            sign up
+        </h1>
+        <form action="p.html"></form>
+            <label for="name">username:</label>
+            <input type="text"id="in1" class="t1"placeholder="Enter your name"><br>
+            <label for="email">email:</label>
+            <input type="email" class="t1"id="in2" placeholder="Enter your email"><br>
+            <label for="password">password</label>
+            <input type="password" class="t1"id="in3" placeholder="Enter your password"><br>
+            <span id="s1" style="color: red;"></span><br>
+            <button onclick="add()">SIGN IN </button>
+    </form>
+    </div>
+    <div class="sign">
+        <h1>
+            sign in
+        </h1>
+        <form action="p.html" onsubmit="return login()">
+            <label for="text" id="">username:</label>
+            <input type="text" class="t1" name="" id="in4"><br>
+            <label for="password" > password:</label>
+            <input type="password"class="t1" id="in5"><br>
+            <span style="color: blue;" id="s2"></span>
+            <input type="submit" name="" id="in6" value="SIGN IN"><br>
+
+
+        </span>
+        </form>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="child">
+                <h3>
+                NOS SERVICES
+            </h3>
+            <ul class="ser">
+                <li >Sales iPhones,iPads and Apple products</li>
+                <li>Trade-ins for your old devices</li>
+                <li>Technical support and repairs</li>
+                <li>iPhone and iPad accessories</li>
+            </ul>
+            </div>
+            <div class="child">
+                   <h3>
+                CONTACTS
+            </h3>
+            <p>555-1152178</p>
+            <p>support-iphone@gmail.com</p>
+            </div>
+            <div class="child">
+                <h3>
+                    OUR SCHEDULE
+                </h3>
+                    <P><i class="fa-solid fa-check fa-lg" style="color: #1abc1c;"></i>Monday to Saturday:10:00 AM to 9:00 PM</P>
+                   <P><i class="fa-solid fa-check fa-lg" style="color: #1abc1c;"></i>Sunday:11:00 AM to 7:00 PM</P>
+                
+            </div>
+            <div class="child">
+                <h3>
+                    SOCIAL MEDIAS
+                </h3>
+                <ul class="icons">
+                    <li><a href=""><i class="fa-brands fa-instagram fa-2xl" style="color: rgb(207, 203, 227);"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook fa-2xl" style="color: rgb(207, 203, 227);"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-youtube fa-2xl" style="color:rgb(207, 203, 227);"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter fa-2xl" style="color: rgb(207, 203, 227);"></i></a></li>
+                </ul>
+            </div>
+         
+        </div>
+
+    </footer>
+    <script>
+        var users=[{username:'saad', password:'123456789'},{username:'hamid', password:'12345679'}];
+
+        function add(){
+        var usern=document.getElementById('in1').value;
+        var passn=document.getElementById('in3').value;
+        if(passn.length<8){
+            document.getElementById('s1').innerHTML="password must contains 8 characters";
+        }
+        else{
+             var user={};
+             user.username=usern;
+             user.password=passn; 
+             users.push(user);
+             console.log(users);
+        }
+    }
+    function login(){
+        var useN=document.getElementById('in4').value;
+        var passN=document.getElementById('in5').value;
+        for(var i=0;i<users.length;i++){
+            if(useN==users[i].username && passN==users[i].password)
+            return true;
+        }
+        document.getElementById('s2').innerHTML="password or username do not match ";
+        return false;
+
+    }
+    
+    </script>
+</body>
+</html>
