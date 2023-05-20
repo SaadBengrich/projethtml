@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Libre+Baskerville:wght@700&family=Mochiy+Pop+One&display=swap');
+*{
+    font-family: 'Caveat', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Mochiy Pop One', sans-serif;
+
+}
+body{
+    padding:0;
+    margin: 0;
+}
+.ss{
+    position: relative;
+    padding:100px;
+    border: none;
+}
+.ab{
+    text-align: center;
+}
+ h1{
+    align-items: center ;
+}
+
+.stp{
+    position: relative;
+    left: 200px;
+    border: none;
+    margin-top: 100px;
+    max-width: 1137px;
+}
+.main{
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mm{
+    width: 100%;
+    height: auto;
+    background-color: none;
+    color: white;
+    
+}
+.text{
+    background-color: none;
+    position: relative;
+    left: 200px;
+    height: 137px;
+    width: 500px;
+    top:-800px
+}
+.icons li{
+    align-items: center;
+    padding-bottom: 10px;
+}
+.icons i{
+    color:rgb(207, 203, 227);
+}
+.text h1{
+    color:white;
+}
+.ap{
+    width: 100%;
+}
+nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(10, 10, 10);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.03);
+    margin:0;
+    padding:0;
+    width: 100%;
+    transition: 0.5s;
+    }
+    .b222{
+     position: relative;  
+     left:900px; 
+
+    }
+.uu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.uu li{
+    list-style: none;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:aliceblue
+}   
+.uu li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    color:white
+   
+}
+ nav img{
+    width: 100px;
+    background: none;
+    padding-left: 50px;
+
+}
+.uu li i{
+    color:aliceblue;
+}
+
+.uu li :hover {
+
+    color:rgb(184, 175, 230);
+    transform: 1s;
+}
+.ser{
+    padding-right: 100px;
+}
+
+.section-container{
+    padding: 4rem 0 3rem;
+    margin-bottom: 300px;
+}
+.saad{
+    margin-left: 180px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: -50px;
+    
+}
+.div-content{
+    margin-left: 400px;
+    display: grid;
+    grid-template-columns:repeat(4,minmax(200px,200px));
+    gap : 15px;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10px;
+    width: 850px;
+    border-radius: 15px;
+    
+}
+.product{
+    text-align: center;
+}
+.product:hover{
+    padding: 10px;
+    border: 3px solid;
+    transition: 0.4s;
+
+    border-color: rgb(68, 55, 55);
+
+}
+.prod-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+.product i{
+    
+    color:rgb(172, 26, 26);
+    cursor: pointer;
+   
+}
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px;
+    margin-top: -200px;
+    height: 250px;
+    color: rgb(207, 203, 227);
+    background-color: rgb(10, 10, 10);
+    border: 5px solid black;
+    
+}
+.child{
+    height: 150px;
+
+}
+.foot li{
+    list-style: none;
+
+}
+.foot h3{
+ text-decoration: underline;}
+ .container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    height: 800px;
+    width: 800;
+    justify-content: center;
+    background-color: black;
+    margin-bottom: 100px;
+ }
+ .imma{
+    height: 500px;
+    width: 300px;
+ }
+ .right{
+    border: 10px solid white;
+    height: 450px;
+    width:500px;
+    padding: 10px;
+    text-align: center;
+    color:white;
+    border-radius: 10px;
+ }
+ .elements{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 2px;
+ }
+ .left{
+   margin-left: 200px;
+   border: 2px solid;
+ }
+ .btn{
+background-color:rgb(11, 112, 11) ;
+color: white;
+border: none;
+border-radius: 5px;
+height: 30px;
+width: 70px;
+ }
+ .btn:hover{
+    background-color: rgb(189, 75, 189);
+    color:whitesmoke;
+    transition: 1s;
+ }
+ .sign{
+    
+    border: 2px solid black;
+    padding:20px;
+    margin-left: 600px;
+    width: 350px;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-bottom: 210px;
+}
+.t1{
+    width: 100%;
+    height: 30px;
+}
+.local{
+    height: 500px;
+    width: 500px;
+    margin-bottom: 300px;
+    margin-left: 450px;
+    margin-top: -150px;
+    text-align: center;
+}
